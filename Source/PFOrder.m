@@ -87,7 +87,7 @@
 		NSLog(@"Got exception while building order dictionary: %@", e);
 	}
 
-	return orderDict;
+	return [NSDictionary dictionaryWithObject:orderDict forKey:@"order"];
 }
 
 // Helper error constructor used in submitInBackground
